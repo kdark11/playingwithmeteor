@@ -1,11 +1,18 @@
 <head>
   <title>Leaderboard</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 </head>
+
 <body>
   <h1>Leaderboard</h1>
   {{> leaderboard}}
 </body>
+
 <template name="leaderboard">
-  {{player}}
+  <ul>
+    {{#each player}}
+    <li class="player {{selectedClass}}">{{name}}: {{score}}</li>
+    {{/each}}
+  </ul>
 </template>
 

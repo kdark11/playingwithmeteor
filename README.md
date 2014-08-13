@@ -1,1 +1,1 @@
-Left off on pg 41
+Left off on pg 63 - chap 8
